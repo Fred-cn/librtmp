@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{90E2A469-1109-4E65-80E3-083E64679DD9}</ProjectGuid>
+    <RootNamespace>RTMPClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>RTMPClient</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <IncludePath>$(BOOST_1_67_INCLUDE_PATH);$(THIRD_PARTY_INCLUDE_PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(BOOST_1_67_LIB_PATH);$(THIRD_PARTY_LIB_PATH);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <SourcePath>$(BOOST_1_67_SRC_PATH);$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <IncludePath>$(BOOST_1_67_INCLUDE_PATH);$(THIRD_PARTY_INCLUDE_PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(BOOST_1_67_LIB_PATH);$(THIRD_PARTY_LIB_PATH);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <SourcePath>$(BOOST_1_67_SRC_PATH);$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>AACEncoder;adtsAAC;h264analyzer;librtmp;srs_librtmp\core;AACEncoder\include;srs_librtmp\kernel;.;srs_librtmp\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;WIN32;RTMPCLIENTSDK_EXPORTS;BOOST_ASIO_DISABLE_STD_CHRONO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>RTMPClient.def</ModuleDefinitionFile>
+      <AdditionalDependencies>srs_librtmp.lib;libfaac.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:libcmtd.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>AACEncoder;adtsAAC;h264analyzer;librtmp;srs_librtmp\core;AACEncoder\include;srs_librtmp\kernel;.;srs_librtmp\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;WIN32;RTMPCLIENTSDK_EXPORTS;BOOST_ASIO_DISABLE_STD_CHRONO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>RTMPClient.def</ModuleDefinitionFile>
+      <AdditionalDependencies>srs_librtmp.lib;libfaac.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AACEncoder.h" />
+    <ClInclude Include="AACEncoder\audio_buffer.h" />
+    <ClInclude Include="AACEncoder\condef.h" />
+    <ClInclude Include="AACEncoder\EasyDSSBuffers.h" />
+    <ClInclude Include="AACEncoder\FAACEncoder.h" />
+    <ClInclude Include="AACEncoder\g711.h" />
+    <ClInclude Include="AACEncoder\G711AToPcm.h" />
+    <ClInclude Include="AACEncoder\g726.h" />
+    <ClInclude Include="AACEncoder\G726ToPcm.h" />
+    <ClInclude Include="AACEncoder\G7XXToAAC.h" />
+    <ClInclude Include="AACEncoder\IDecodeToPcm.h" />
+    <ClInclude Include="AACEncoder\outDebug.h" />
+    <ClInclude Include="adtsAAC\adts.h" />
+    <ClInclude Include="BigLittleSwap.h" />
+    <ClInclude Include="FlvAacEncoder.hpp" />
+    <ClInclude Include="h264analyzer\bs.h" />
+    <ClInclude Include="h264analyzer\GetVPSSPSPPS.h" />
+    <ClInclude Include="h264analyzer\H264DecodeSps.h" />
+    <ClInclude Include="h264analyzer\h264_NalParse.h" />
+    <ClInclude Include="h264analyzer\h264_sei.h" />
+    <ClInclude Include="h264analyzer\h264_stream.h" />
+    <ClInclude Include="librtmpsdk.h" />
+    <ClInclude Include="LibRtmpSession.hpp" />
+    <ClInclude Include="librtmp\rtmp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rtmp_codec_define.h" />
+    <ClInclude Include="sps_decode.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AACEncoder.cpp" />
+    <ClCompile Include="AACEncoder\audio_buffer.cpp" />
+    <ClCompile Include="AACEncoder\EasyDSSBuffers.cpp" />
+    <ClCompile Include="AACEncoder\FAACEncoder.cpp" />
+    <ClCompile Include="AACEncoder\g711.cpp" />
+    <ClCompile Include="AACEncoder\G711AToPcm.cpp" />
+    <ClCompile Include="AACEncoder\g726.cpp" />
+    <ClCompile Include="AACEncoder\G726ToPcm.cpp" />
+    <ClCompile Include="AACEncoder\G7XXToAAC.cpp" />
+    <ClCompile Include="AACEncoder\IDecodeToPcm.cpp" />
+    <ClCompile Include="adtsAAC\adts.c" />
+    <ClCompile Include="FlvAacEncoder.cpp" />
+    <ClCompile Include="h264analyzer\GetVPSSPSPPS.cpp" />
+    <ClCompile Include="h264analyzer\H264DecodeSps.cpp" />
+    <ClCompile Include="h264analyzer\h264_sei.cpp" />
+    <ClCompile Include="h264analyzer\h264_stream.cpp" />
+    <ClCompile Include="librtmpsdk.cpp" />
+    <ClCompile Include="LibRtmpSession.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RTMPClient.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="h264analyzer">
+      <UniqueIdentifier>{c8d2e6c5-9ace-417e-9c92-1aef50842c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="adtsAAC">
+      <UniqueIdentifier>{9ec81e41-f447-422e-be5a-659fb4a6a8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="librtmp">
+      <UniqueIdentifier>{62fb3c12-886b-4537-832b-a52c836ca757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AACEncoder">
+      <UniqueIdentifier>{04b02953-12ab-45a4-b457-71bca9bf1081}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sps_decode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BigLittleSwap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlvAacEncoder.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="librtmpsdk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LibRtmpSession.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rtmp_codec_define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="h264analyzer\bs.h">
+      <Filter>h264analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="h264analyzer\GetVPSSPSPPS.h">
+      <Filter>h264analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="h264analyzer\h264_NalParse.h">
+      <Filter>h264analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="h264analyzer\h264_sei.h">
+      <Filter>h264analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="h264analyzer\h264_stream.h">
+      <Filter>h264analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="adtsAAC\adts.h">
+      <Filter>adtsAAC</Filter>
+    </ClInclude>
+    <ClInclude Include="librtmp\rtmp.h">
+      <Filter>librtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\audio_buffer.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\condef.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\EasyDSSBuffers.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\FAACEncoder.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\g711.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\G711AToPcm.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\g726.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\G726ToPcm.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\IDecodeToPcm.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\outDebug.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="AACEncoder\G7XXToAAC.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+    <ClInclude Include="h264analyzer\H264DecodeSps.h">
+      <Filter>AACEncoder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlvAacEncoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="librtmpsdk.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LibRtmpSession.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="h264analyzer\GetVPSSPSPPS.cpp">
+      <Filter>h264analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="h264analyzer\h264_sei.cpp">
+      <Filter>h264analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="h264analyzer\h264_stream.cpp">
+      <Filter>h264analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="adtsAAC\adts.c">
+      <Filter>adtsAAC</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\audio_buffer.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\EasyDSSBuffers.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\FAACEncoder.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\g711.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\G711AToPcm.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\g726.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\G726ToPcm.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\IDecodeToPcm.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="AACEncoder\G7XXToAAC.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+    <ClCompile Include="h264analyzer\H264DecodeSps.cpp">
+      <Filter>AACEncoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RTMPClient.def">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

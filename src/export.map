@@ -1,0 +1,29 @@
+librtmpsdk.so
+{
+	global:
+		RTMPCLIENT_Session_Create;
+		RTMPCLIENT_Session_Release;
+		RTMPCLIENT_SetTimeout;
+		RTMPCLIENT_ConnectPublish;
+		RTMPCLIENT_ConnectPlay;
+		RTMPCLIENT_IsLinked;
+		RTMPCLIENT_DisConnect;
+	    
+		RTMPCLIENT_InitMetadata;
+		RTMPCLIENT_SendH264Frame;
+		RTMPCLIENT_SendH265Frame;
+		RTMPCLIENT_SendAACFrame;
+		RTMPCLIENT_SendAudioFrame;
+		RTMPCLIENT_SendFlvPacket;
+	    
+		RTMPCLIENT_ReadPacket;
+		RTMPCLIENT_ReadData;
+		RTMPCLIENT_PlayPause;
+		RTMPCLIENT_PlaySeek;
+		RTMPCLIENT_FlvTag2H264;
+		RTMPCLIENT_FlvTag2AAC;
+		RTMPCLIENT_ParseH264SPSPPS;
+ 
+	local:
+		*;
+};
